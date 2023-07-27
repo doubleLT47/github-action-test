@@ -15,19 +15,18 @@ jobs:
         run: |
           node -v
           npm -v
-					
+
       - name: python command
         run: |
           import platform
           print(platform.processor())
         shell: python
 
-	run-window-command:
-		runs-on: window-latest
-		steps:
-			- name: Directory PowerShell
-				run: Get-Location
-
-			- name: Direcctory Bash
-				run: pwd
-				shell:  bash
+  run-windows-commands:
+    runs-on: window-latest
+    steps:
+      - name: Directory PowerShell
+        run: Get-Location
+      - name: Direcctory Bash
+        run: pwd
+        shell: bash
