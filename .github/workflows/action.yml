@@ -20,6 +20,12 @@ jobs:
         run: |
           pwd
           ls -a
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_WORKSPACE
+          echo "${{ github.token }}"
+        #   echo git clone git@github:$GITHUB_REPOSITORY
+        #   git checkout $GITHUB_SHA
 
       - name: Simpler Js action
         uses: actions/hello-world-javascript-action@v1
