@@ -9,6 +9,11 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+        - name: List file
+          run: |
+            pws
+            ls
+
       - name: Simpler Js action
         uses: actions/hello-world-javascript-action@v1
         with:

@@ -21,12 +21,3 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
-
-  run-windows-commands:
-    runs-on: window-latest
-    steps:
-      - name: Directory PowerShell
-        run: Get-Location
-      - name: Direcctory Bash
-        run: pwd
-        shell: bash
